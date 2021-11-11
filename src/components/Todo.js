@@ -4,7 +4,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
 
     const deleteHandler = () => {
         setTodos(todos.filter((item) => item.id !== todo.id));
-    }
+    };
 
     const completeHandler = () => {
         setTodos(todos.map((item) => {
@@ -17,7 +17,7 @@ const Todo = ({text, todo, todos, setTodos}) => {
 
             return item;
         }));
-    }
+    };
 
     return (
         <div className="todo">
